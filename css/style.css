@@ -20,5 +20,93 @@ body{
 .figure{
     width: 260px;
     height: 260px;
-    background-color: white;
+    border: 1px solid white;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*SEMAFORO*/
+.traffic-light{
+    width: calc(100% - 160px);
+    height: calc(100% - 30px);
+    border: 7px solid gray;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+
+/*FIGURA X*/
+.x{
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 100px);
+    height: calc(100% - 30px);
+}
+.diagonal-x1{
+    position: absolute;
+    background-color: rgb(194, 3, 3);
+    width: 35px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(28deg);
+}
+.diagonal-x2{
+    position: absolute;
+    background-color: rgb(194, 3, 3);
+    width: 35px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-28deg);
+}
+
+/*5 FORMAS GEOMETRICAS*/
+.round{
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    background-color: blue;
+    border-radius: 50%;
+}
+.square{
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    background-color: aquamarine;
+}
+.triangle{
+    width: calc(100% - 260px);
+    height: calc(100% - 260px);
+    border-left: 90px solid;
+    border-right: 90px solid;
+    border-bottom: 180px solid red;
+}
+.rombo{
+    width: calc(100% - 125px);
+    height: calc(100% - 125px);
+    background-color: lime;
+    transform: rotate(45deg);
+}
+.oval{
+    width: calc(100% - 80px);
+    height: calc(100% - 150px);
+    background-color: goldenrod;
+    border-radius: 50%;
 }
