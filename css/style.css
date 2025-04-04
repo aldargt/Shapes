@@ -110,3 +110,23 @@ body{
     background-color: goldenrod;
     border-radius: 50%;
 }
+
+/*CAJAS CON SOMBRAS*/
+.attributes{
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    border-radius: 10%;
+    background-color: rgba(106, 106, 106, 0.714);
+}
+.shadow1{
+    box-shadow: 7px 7px 10px rgba(255, 255, 255, 0.618);
+}
+.shadow2{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.618);
+}
+.shadow3{
+    box-shadow: 21px 21px 10px rgba(255, 255, 255, 0.618);
+}
+.shadow4{
+    box-shadow: 21px -21px 10px rgba(255, 255, 255, 0.618);
+}
